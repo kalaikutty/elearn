@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html   lang="en-us">
+     <head>
+	 <meta charset='UTF-8'/>
+	 <title>AgriFamily</title>
+	 
+	 <style>
+	 .p{width:15%;
+	 border-radius:50%;
+	 height:10%;
+	    
+	 }
+	  input{border-radius:15px;}
+
+	 body{font-family:'Open Sans', sans-serif;
+	     background-image:url('logo.png');
+    
+	     background-size:100%;
+	 }
+
+	html{
+	  margin:9;
+	  padding:2 ;
+	  width: 100%;}
+	
+	strong:hover{font-size:20px;}
+	.late
+	{color:#611f1f;
+	 } 
+
+	button{color:green;
+	    border-radius:10px;
+	float:right;}
+	
+
+	.f{float:right;}
+	.k{font-size:30px;
+	    color:brown;
+	}
+	
+	
+	
+	.logo{width:150px;
+	border-radius:100%
+	}
+	.over{position:relative;
+	color:white;
+	}
+	.text{
+	position:absolute;
+	 bottom: 20px;
+  left: 16px;}
+       </style>
+	 
+	 
+	 </head>
+
+    <body>
+		
+	<a href='harvesting.html'> <button>Tamil cultivation Time Table</button></a>
+		<a href="farming.html"> <button>Types Farming </button></a>
+	<a href='fishfarm.html'><button>FishFarming</button></a>
+	
+		
+     <h1>Welcome</h1>
+     
+	<div class='over'>
+	<div ><img src='download.jpg'  class='logo'/></div>
+	<div class='text'>AgriFam</div>
+	</div>
+	
+	<p><marquee><h2>Agriculture is the Back bone of INDIA.Every citizen have a responsibility to save the agriculture.</h2></marquee></p>
+		
+	<form method="POST" action="login.php" autocomplete='off' >
+	 <fieldset class='f'>
+	 <legend>Register Here</legend>
+        <table>
+           <tr>				
+              <td ><label for="email">Enter your Email</label></td>
+            </tr>
+            <tr>
+              <td><input type="email" name="mail" required /></td>
+           </tr>
+          <tr>
+               <td><label> Enter your password(for this site)</label></td>
+            </tr>
+            <tr>  
+               <td><input type='password' name="pass" required /></td>
+           </tr>
+		   <tr>
+	             <td><input type="submit" name='sub' /></td>
+	       </tr>
+	       <tr>
+				 <td><a href='login.php'>Log in (Already Registered)</a></td>
+		   </tr>
+        </table>  
+</fieldset>		
+    </form>
+    
+    
+	
+	<strong class='late'>Farming</strong>
+	<p >Farming is the act or process of working the ground, planting seeds, and growing edible plants.<br/>
+	You can also describe raising animals for milk or meat as farming. <br/>
+	Farming is a great way to describe the lifestyle and work of people whose jobs are in the agriculture industry.
+	
+    </p>
+    
+
+
+	
+	
+	
+	<div> <strong class='late'>Farming according to crops :</strong>
+	<br/> <br/><ul>
+	    <li>Arable: Crops</li>
+       <li>Pastoral: Animals</li>
+        <li>Mixed: Crops and animals</li>
+        <li>Subsistence: Grown just for the farmer and his family</li>
+        <li>Commercial: Grown to sell</li>
+        <li>Intensive: High inputs of labour or capital ususally small</li>
+        <li>Extensive: Low inputs of labour or capital</li>
+        <li>Sedentary: Permanently in in one place</li>
+        <li>Nomadic: The farmers move around to find new areas to farm </li>
+		
+	</ul>
+	</div>
+
+
+    <img src="../phpandmysql/pic/pic1.jpg"  class='p'   alt='paddy field'/> 
+	<img src="../phpandmysql/pic/pic2.jpg"  class='p'   alt='paddy field'/>
+	<img src="../phpandmysql/pic/pic3.jpg"  class='p'    alt='paddy field'/>
+	<div class='k' >	&copy; Kalai
+	</div>
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+<?php
+
+ $conn=mysqli_connect('localhost','id13076923_root','kalaikutty22','id13076923_kalai');
+   
+
+if(isset($_POST['sub'])){
+	 
+    $em=$_POST['mail'];
+    $pa=$_POST['pass'];
+   
+   
+    
+    if($em !=' ' || $pa !=' ' || $na != '')
+    {
+        
+     $qury=mysqli_query($conn, "insert into form (Name,Email,password)
+values  ('$em','$pa')");
+
+    }
+    
+   else { echo 'no';}
+    
+
+
+
+
+mysqli_close($conn);
+
+}
+
+
+?>
+	
+	
+	</body>
+	
+</html>

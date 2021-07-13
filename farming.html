@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+	 <h1>Types of farming</h1>
+	 </head>
+
+    <body>
+        
+        <style>
+            	button{color:green;
+	    border-radius:10px;
+	float:right;}
+        </style>
+	
+	<a href='index.html'> <button>Home</button></a><br/>
+	<a href='harvesting.html'> <button>Tamil cultivation Time Table</button></a>
+	
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../phpandmysql/pic/pic4.jpg" style="width:100%">
+    <div class="text">Corn cultivation</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../phpandmysql/pic/pic5.jpg" style="width:100%">
+    <div class="text">Corn cultivation</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../phpandmysql/pic/pic6.jpg" style="width:100%">
+    <div class="text">Corn cultivating irrigation</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<style>
+* {box-sizing:border-box}
+
+.c{float:right;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+}
+
+</style>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+	
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	  <p>India has a long agricultural history, which dates back approximately ten thousand years. Today, India has the second-highest crop output in the world and agriculture-related jobs employ nearly 60% of the total workforce. However, as India’s population grows, the country is having difficulties meeting the demand for food products like wheat and rice. There are currently eight types of agriculture in India:
+</p>
+<strong>Shifting agriculture:</strong>
+ <p>This farming practice is mainly used by tribal groups to grow tuber and root crops. Land is obtained by clearing a forested area and planting crops there. When the land is no longer fertile, another area of land is cleared and the crops are shifted there.
+</p>
+ <strong>Subsistence farming: </strong>
+<p> This is a widely-practiced farming technique can be seen all over India. The farmer and/or his family grow grains for themselves or for sale at the local market.
+</p><br/>
+ <strong>Intensive agriculture:</strong>
+<p> This farming practice can be seen in densely populated areas in India. It is an attempt to maximize the output of the land, through the use of every possible effort. It requires a huge amount of capital in addition to a great deal of human labour, but more than one crop can be raised per year.
+</p>
+
+
+
+ <strong>Extensive agriculture:</strong>
+ <p>This is the modern type of farming that can be seen largely in the developed world and in some parts of India. It relies largely on machinery as opposed to a human labour force and raises one crop per year.
+</p>
+ <strong>Commercial agriculture:</strong>
+<p> The goal of commercial agriculture is a high yield, so that produce can be exported to other countries or areas for profit. Wheat, cotton, sugarcane, and corn are some commercial crops and they are grown in states including Gujarat, Punjab, Haryana, and Maharashtra.
+</P>
+ <strong>Plantation agriculture:</strong>
+ <p>This style is often used for crops which require a lot of space and a long growing period, such as rubber, tea, coconut, coffee, cocoa, spices, and fruits. Plantations are only capable of producing a single crop. Plantation agriculture is practised in Kerala, Assam, Karnataka, and Maharashtra.
+</p>
+ <strong>Dry land farming:</strong>
+ <p>As the name suggests, dry land farming is practised in the more arid and desert-like areas of the country, including northwest and central India. Crops such as gramjowar, bajra, and peas have lower water requirements and can therefore be grown in these conditions.
+</p>
+<strong> Wet land farming: </strong>
+ <p>Many areas of India are affected by heavy monsoon rains and subsequent flooding. Well-irrigated areas, such as those in the northeast India and the Western Ghats, are suitable for farming rice, jute, and sugarcane.
+</p>
+And
+
+ <p><strong>Aquaponics:</strong><br/> Today, aquaponics farming systems are rare in the subcontinent. But we’re working to change that … We’re ready to make it nine types of agriculture in India.
+	</p>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	<div class='c'>	&copy; Kalai
+	</div>
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
